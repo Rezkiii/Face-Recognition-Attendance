@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Capture</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Senroll.css') }}">
+</head>
+<body>
+    <header>
+    		<h1>Face Capture Enroll</h1>
+   	 	<button onclick="window.location.href='{{ url_for('index') }}'">Kembali</button>
+	</header>
+	
+    <form action="/capture" method="POST">
+        <label for="folder_name">Folder Name:</label>
+        <input type="text" name="folder_name" id="folder_name" required><br><br>
+
+        <label for="num_images">Number of Images:</label>
+        <input type="number" name="num_images" id="num_images" required><br><br>
+
+        <label for="camera_url">Camera URL:</label>
+        <input type="text" name="camera_url" id="camera_url" required><br><br>
+
+        <label for="nip">NIP:</label>
+        <input type="text" name="nip" id="nip" required><br><br>
+
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" id="nama" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <input type="submit" value="Capture and Train">
+    </form>
+</body>
+</html>

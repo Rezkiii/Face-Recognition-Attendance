@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Example</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Scheck.css') }}">
+</head>
+<body>
+    	<header>
+    		<h1>Data Example</h1>
+   	 	<button onclick="window.location.href='{{ url_for('index') }}'">Kembali</button>
+	</header>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>NIP</th>
+            <th>Nama</th>
+            <th>Gender</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item['id'] }}</td>
+            <td>{{ item['nip'] }}</td>
+            <td>{{ item['nama'] }}</td>
+            <td>{{ item['gender'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

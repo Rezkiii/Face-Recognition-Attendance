@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Capture and Validation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Sabsen.css') }}">
+</head>
+<body>
+    <header>
+    		<h1>Face Capture Validation</h1>
+   	 	<button onclick="window.location.href='{{ url_for('index') }}'">Kembali</button>
+	</header>
+    <form method="POST" action="{{ url_for('absensi_index') }}">
+        <label for="url">Camera URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Start Capture</button>
+    </form>
+</body>
+</html>

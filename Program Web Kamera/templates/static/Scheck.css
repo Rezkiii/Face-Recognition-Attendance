@@ -1,0 +1,77 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, p, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the h1 in the header */
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Style the button in the header */
+header button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Give a subtle hover effect to the button */
+header button:hover {
+    background-color: #45a049;
+}
+
+/* Style the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Style table headers */
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style table cells */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Style alternating rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style the table on smaller screens */
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+}
+
