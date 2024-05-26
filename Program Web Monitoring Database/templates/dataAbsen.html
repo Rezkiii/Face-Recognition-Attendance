@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+         <h1><a href="/">Dashboard</a></h1>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="/dataAbsen">Data Absen</a></li>
+            <li><a href="/kehadiran">Absen Masuk</a></li>
+            <li><a href="/absenkeluar">Absen Keluar</a></li>
+        </ul>
+    </div>
+    <div class="content">
+         <h1>Hasil Face Recognition</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>NIP</th>
+            <th>Nama</th>
+            <th>Tanggal</th>
+            <th>Jam</th>
+            <th>Akurasi</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>{{ result[4] }}</td>
+            <td>{{ result[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+</body>
+</html>

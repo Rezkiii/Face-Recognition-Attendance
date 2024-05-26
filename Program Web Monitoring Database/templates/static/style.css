@@ -1,0 +1,118 @@
+/* Reset some default styles to ensure consistency */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the header */
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+/* Style the h1 in the header */
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    
+}
+
+.header h1 a {
+	color:#FFF;
+}
+
+/* Style the sidebar */
+.sidebar {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    background-color: #2c3e50;
+    padding: 20px;
+}
+
+/* Style the sidebar ul */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the sidebar li */
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+/* Style the sidebar links */
+.sidebar a {
+    text-decoration: none;
+    color: #ecf0f1;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Give a subtle hover effect to the sidebar links */
+.sidebar a:hover {
+    background-color: #3498db;
+}
+
+/* Style the main content */
+.content {
+    margin-left: 20%;
+    padding: 20px;
+}
+
+/* Style the main content h1 */
+.content h1 {
+    color: #333;
+}
+
+/* Style the main content p */
+.content p {
+    color: #555;
+}
+
+/* Style the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style table headers */
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style table headers */
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Style alternating rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    
+    
+}
+
+.content h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Add this line */
+}

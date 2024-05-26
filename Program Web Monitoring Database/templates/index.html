@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+         <h1><a href="/">Dashboard</a></h1>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="/dataAbsen">Data Absen</a></li>
+            <li><a href="/kehadiran">Absen Masuk</a></li>
+            <li><a href="/absenkeluar">Absen Keluar</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- Konten utama -->
+        <h1>Selamat datang di halaman utama!</h1>
+        <p>Silakan pilih salah satu opsi di samping kiri:</p>
+    </div>
+</body>
+</html>
